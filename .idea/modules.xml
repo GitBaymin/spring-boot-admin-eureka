@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/admin-eureka-client/admin-eureka-client.iml" filepath="$PROJECT_DIR$/admin-eureka-client/admin-eureka-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/admin-server/admin-server.iml" filepath="$PROJECT_DIR$/admin-server/admin-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/maven-demo.iml" filepath="$PROJECT_DIR$/maven-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-admin-eureka.iml" filepath="$PROJECT_DIR$/spring-boot-admin-eureka.iml" />
     </modules>
   </component>
 </project>

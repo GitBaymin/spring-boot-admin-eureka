@@ -9,14 +9,16 @@
         <module name="admin-eureka-client" />
         <module name="admin-server" />
         <module name="eureka-server" />
-        <module name="maven-demo" />
+        <module name="spring-boot-admin-eureka" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="admin-eureka-client" target="1.8" />
       <module name="admin-server" target="1.8" />
+      <module name="demo" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="maven-demo" target="1.8" />
+      <module name="spring-boot-admin-eureka" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
