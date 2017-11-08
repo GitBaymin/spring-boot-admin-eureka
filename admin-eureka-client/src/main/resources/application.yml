@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: admin-eureka-client
+    index: 1
+
+server:
+  port: 8080
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.index:${random.value}}
+    prefer-ip-address: true
+    hostname: eureka-client-${spring.application.index}
+    status-page-url-path: ${management.context-path}/info
+    health-check-url-path: ${management.context-path}/health
+    metadata-map:
+      management:
+        context-path: ${management.context-path}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  security:
+    enabled: false
+  context-path: /manage

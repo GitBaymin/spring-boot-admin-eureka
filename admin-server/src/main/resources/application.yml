@@ -1,0 +1,35 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: Spring Boot Admin Server
+    index: 1
+  jackson:
+    serialization:
+      indent_output: true
+  boot:
+    admin:
+      url: http://localhost:${server.port}
+
+management:
+  security:
+    enabled: false
+  context-path: /manage
+
+endpoints:
+  health:
+    sensitive: false
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.index:${random.value}}
+    prefer-ip-address: true
+    hostname: eureka-client-${spring.application.index}
+    status-page-url-path: ${management.context-path}/info
+    health-check-url-path: ${management.context-path}/health
+    metadata-map:
+      management:
+        context-path: ${management.context-path}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
