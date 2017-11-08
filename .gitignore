@@ -3,8 +3,9 @@
 ### Example user template
 
 # IntelliJ project files
-.idea
+
 *.iml
+.idea
 out
 gen### Java template
 # Compiled class file
@@ -29,8 +30,13 @@ gen### Java template
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
 
-.gitignore
-.idea/sonarlint/
-.idea/workspace.xml
-src/
+
+
